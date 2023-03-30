@@ -13,11 +13,6 @@ class MapClass {
   //simply get the value for a given key from storage
   def getValue(key: String): String = {
       mapStorage.getOrElse(key,throw new NoSuchElementException("Key not found"))
-//      mapStorage.get(key) match {
-//          case Some(value) => value
-//          case None => throw new NoSuchElementException("Key not found")
-//    }
-
   }
 
   // return all the key-values of the db
